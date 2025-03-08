@@ -1,0 +1,20 @@
+dimensions = {
+    "iphone-11": {"width": 414, "height": 896},
+    "iphone-8": {"width": 375, "height": 667},
+    "iphone-x": {"width": 375, "height": 812},
+    "iphone-7": {"width": 375, "height": 667},
+    "iphone-6": {"width": 375, "height": 667},
+    "iphone-5": {"width": 320, "height": 568},
+    "iphone-4": {"width": 320, "height": 480},
+    "ipad-pro": {"width": 1024, "height": 1366},
+    "ipad": {"width": 768, "height": 1024},
+    "android": {"width": 360, "height": 640},
+    "android-tablet": {"width": 800, "height": 1280},
+    "android-large": {"width": 1080, "height": 1920},
+    "android-small": {"width": 240, "height": 320},
+    "android-landscape": {"width": 640, "height": 360},
+    "android-tablet-landscape": {"width": 1280, "height": 800},
+    "android-large-landscape": {"width": 1920, "height": 1080},
+    "android-small-landscape": {"width": 320, "height": 240},
+}
+
