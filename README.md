@@ -2,7 +2,7 @@
 
 A lightweight Python-based Android emulator alternative for developing and testing Expo apps.
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 Ensure you have the following installed:
@@ -25,7 +25,7 @@ Ensure you have the following installed:
    python main.py
    ```
 
-## 🎮 Usage
+## Usage
 1. Run your Expo project in development mode:
    ```bash
    expo start
