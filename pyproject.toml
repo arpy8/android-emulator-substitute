@@ -1,5 +1,5 @@
 [project]
-name = "android emulator alternative"
+name = "android_emulator_alternative"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"

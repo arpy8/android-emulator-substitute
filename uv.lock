@@ -2,6 +2,17 @@ version = 1
 requires-python = ">=3.12"
 
 [[package]]
+name = "android-emulator-alternative"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "eel" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "eel", specifier = ">=0.18.1" }]
+
+[[package]]
 name = "bottle"
 version = "0.13.2"
 source = { registry = "https://pypi.org/simple" }
@@ -47,17 +58,6 @@ dependencies = [
     { name = "typing-extensions" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/6f/a3/5d31ea931bff935157de46fce73402e23ce94a043c9e75c679d47d14d314/eel-0.18.1.tar.gz", hash = "sha256:3db520182f7665c29f2e0147d11eae728d8a8453e11529d9c236b5a3b9801a22", size = 26544 }
-
-[[package]]
-name = "eel-testing"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "eel" },
-]
-
-[package.metadata]
-requires-dist = [{ name = "eel", specifier = ">=0.18.1" }]
 
 [[package]]
 name = "future"

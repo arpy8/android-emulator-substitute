@@ -4,7 +4,7 @@ import argparse
 from constants import dimensions
 
 
-def start_app(port=8081, device="iphone-11", html_file_path="emulator.html"):
+def start_app(port=8081, device="iphone-11", html_file_path="emulator.html", url="http://localhost"):
     width = dimensions[device]["width"]
     height = dimensions[device]["height"]
     
@@ -13,13 +13,16 @@ def start_app(port=8081, device="iphone-11", html_file_path="emulator.html"):
     html_dir = os.path.dirname(os.path.abspath(html_file_path))
     html_filename = os.path.basename(html_file_path)
     
+    # Only append port if using default localhost URL
+    app_url = f"{url}:{port}" if url == "http://localhost" else url
+    
     eel.init(html_dir)
     eel.start(html_filename, 
               mode='chrome',
               port=2907,
               block=True,
               cmdline_args=[
-                  f'--app=http://localhost:{port}',
+                  f'--app={app_url}',
                   '--new-window',
                   '--disable-features=RendererAppWindow',
                   f'--window-size={width},{height}',
@@ -33,6 +36,7 @@ def main():
     parser.add_argument("-d", "--device", type=str, default="iphone-11", help="Specify the device to emulate.")
     parser.add_argument("-f", "--html-file", type=str, default="emulator.html", help="Path to your HTML file.")
     parser.add_argument("-l", "--list-devices", action="store_true", help="List all available devices.")
+    parser.add_argument("-u", "--url", type=str, default="http://localhost", help="URL of the app/website to run.")
 
     args = parser.parse_args()
     
@@ -47,7 +51,7 @@ def main():
         print("Use --list-devices to see available options")
         return
     
-    start_app(args.port, args.device, args.html_file)
+    start_app(args.port, args.device, args.html_file, args.url)
     
 if __name__ == "__main__":
     main()

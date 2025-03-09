@@ -2,6 +2,9 @@
 
 A lightweight Python-based Android emulator alternative for developing and testing Expo apps.
 
+## Example Usage
+![alt text](misc/image.png)
+
 ## Installation
 
 ### Prerequisites
