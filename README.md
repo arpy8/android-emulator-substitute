@@ -3,7 +3,8 @@
 A lightweight Python-based Android emulator alternative for developing and testing Expo apps.
 
 ## Example Usage
-![alt text](misc/image.png)
+![image](https://github.com/user-attachments/assets/4dcf14f8-c699-43db-ac59-3f842b9b5fa0)
+
 
 ## Installation
 
@@ -44,3 +45,4 @@ The emulator supports the following flags:
 - `-p`, `--port` : Set the port number (default: `8081`).
 - `-d`, `--device` : Specify the device to emulate (default: `iphone-11`).
 - `-l`, `--list-devices` : List all available devices.
+- `-u`, `--url` : Explicitly mention a url (ignores port number, if mentioned).
